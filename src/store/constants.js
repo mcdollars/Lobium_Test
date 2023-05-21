@@ -1,0 +1,9 @@
+const REMOVE_TASK = "REMOVE_TASK"
+const CHECK_TASK = "CHECK_TASK"
+const ADD_TASK = "ADD_TASK"
+
+export {
+    REMOVE_TASK,
+    CHECK_TASK,
+    ADD_TASK
+}

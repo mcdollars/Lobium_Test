@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+#root {
+    display: "flex";
+    justify-content: "center";
+    width: 70%;
+    margin: auto;
+}
+
+.check {
+    width: 50px;
+    height: 50px;
+}
+
+input, textarea {
+    font-size: 24px;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    background-color: dodgerblue;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: rgb(78, 181, 255);
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.error {
+    color:red;
+    font-size: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.form {
+    font-size: 12px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.m-auto {
+    margin: auto;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-8 {
+    width: 66.67%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.left {
+    text-align: left;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
