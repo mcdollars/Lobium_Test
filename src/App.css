@@ -56,7 +56,8 @@ button:hover {
 
 .error {
     color:red;
-    font-size: 10px;
+    font-size: 18px;
+    font-family: "Quicksand"
 }
 
 .hide {
