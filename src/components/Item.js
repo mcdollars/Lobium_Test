@@ -18,8 +18,8 @@ const Item = ({ index, task }) => {
   };
 
   return (
-    <div style={Styles.item} className="flex align-center justify-space w-100">
-      <div className="flex align-center col-9">
+    <div style={Styles.item} className="flex align-center justify-space w-100 ">
+      <div className="flex align-center col-9 ml-3">
         <input
           className="check"
           type="checkbox"
@@ -37,8 +37,8 @@ const Item = ({ index, task }) => {
           {task.description}
         </div>
       </div>
-      <button onClick={removeTask} className="Name">
-        remove
+      <button onClick={removeTask} className="remove">
+        <i class='fas fa-trash-alt'></i>
       </button>
     </div>
   )

@@ -24,32 +24,34 @@ const TodoList = () => {
 
   return (
     <div style={Styles.container}>
-      <h1 style={Styles.header}>To-Do List</h1>
-      <div className="flex">
+      <h1 style={Styles.header}>-- TO-DO NOW --</h1>
+      <div className="bar"></div>
+      <div className="flex ml-30">
         <div className="flex column input col-9">
-          <div className="flex justify-space mb-30">
-            <div className="col-3 left">Title</div>
+          <div className="flex justify-space mb-10">
             <input
-              className="col-9"
+              className="input-box"
+              placeholder="Title"
               type="text"
               onChange={(e) => setTitle(e.target.value)}
               value={title}
             />
           </div>
           <div className="flex justify-space">
-            <div className="col-3 left">Description</div>
             <textarea
-              className="col-9"
+              className="input-box"
+              placeholder="Description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
         </div>
-        <button className="col-3" type="button" onClick={addTask}>
+        <button className="add-task-btn col-3" type="button" onClick={addTask}>
           Add Task
         </button>
       </div>
       <div className={`${!error && "hide"} error`}>Title must not be empty</div>
+      <div className="bar"></div>
       <div>
         {tasks.map((task, index) => (
           <Item key={index} task={task} index={index} />
